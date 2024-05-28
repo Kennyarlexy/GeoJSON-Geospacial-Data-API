@@ -14,7 +14,7 @@
         <main>
             <section class="mb-6">
                 <p class="text-lg text-center">
-                    API ini memungkinkan pengguna untuk mendapatkan data geospasial di kecamatan Singkawang Selatan dalam bentuk GeoJSON. API ini menyediakan data geospasial untuk 9 bidang yang berbeda (9 id yang berbeda, harap periksa link pertama). Berikut adalah tabel URL yang dapat diakses beserta kegunaannya.
+                    API ini memungkinkan pengguna untuk mendapatkan data geospasial di kecamatan Singkawang Selatan dalam bentuk GeoJSON. API ini menyediakan data geospasial untuk 10 bidang yang berbeda (10 id yang berbeda, harap periksa link pertama). Berikut adalah tabel URL yang dapat diakses beserta kegunaannya.
                 </p>
             </section>
             <section>
