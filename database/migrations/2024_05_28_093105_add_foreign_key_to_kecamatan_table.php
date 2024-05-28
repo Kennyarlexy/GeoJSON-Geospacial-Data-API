@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kecamatan', function (Blueprint $table) {
-            $table->id();
-            $table->string('kode_kecamatan');
-            $table->string('nama_kecamatan');
-            $table->foreignId('geojson_id');
+        Schema::table('kecamatan', function (Blueprint $table) {
+            $table->foreign('geojson_id')->references('id')->on('geojson')->onDelete('cascade');
         });
     }
 
@@ -24,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kecamatan');
+        Schema::table('kecamatan', function (Blueprint $table) {
+            $table->dropForeign(['geojson_id']);
+        });
     }
 };

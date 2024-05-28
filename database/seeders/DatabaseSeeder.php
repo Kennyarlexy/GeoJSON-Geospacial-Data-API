@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
         Kecamatan::create([
             'kode_kecamatan' => 'skwkec_001',
             'nama_kecamatan' => 'Singkawang Selatan',
-            'file_geojson' => $directory . 'kecamatan_singkawang_selatan_adm.geojson'
+            'geojson_id' => 10
         ]);
     }
 
@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             ['nama_bidang' => 'Pendidikan'],
             ['nama_bidang' => 'Fasilitas Kesehatan'],
             ['nama_bidang' => 'Rumah Ibadah'],
+            ['nama_bidang' => 'Batas Administrasi']
         ]);
     }
 
@@ -66,6 +67,10 @@ class DatabaseSeeder extends Seeder
                 'bidang_id' => 3,
                 'nama_subbidang' => 'Vihara'
             ],
+            [
+                'bidang_id' => 4,
+                'nama_subbidang' => 'Batas Administrasi Kecamatan'
+            ]
         ]);
     }
 
@@ -124,6 +129,12 @@ class DatabaseSeeder extends Seeder
                 'kecamatan_id' => 1,
                 'nama' => 'Vihara',
                 'file_geojson' => $directory . 'vihara.geojson'
+            ],
+            [
+                'subbidang_id' => 10,
+                'kecamatan_id' => 1,
+                'nama' => 'Batas Administrasi Kecamatan Singkawang Selatan',
+                'file_geojson' => $directory . 'kecamatan_singkawang_selatan_adm.geojson'
             ]
         ]);
     }
